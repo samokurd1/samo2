@@ -41,7 +41,7 @@ module.exports = {
         var x3 = Math.floor(Math.random() * x.length);
         var fast = new MessageEmbed()
             .setColor(client.build.colors.warn)
-            .addField(`${x[x3]}`, "_ _", true)
+            .setImage(`${x[x3]}`, "_ _", true)
             .setDescription(client.build.emojis.warn + `** You Have ` + module.exports.time + `s To Type The Correct Answer!**`, true);
         message.channel.send(fast).then(() => {
             var r = message.channel.awaitMessages(msg => msg.content == x2[x3], {
