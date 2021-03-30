@@ -1,7 +1,6 @@
 const { MessageEmbed, MessageAttachment } = require('discord.js');
 const db = require('quick.db');
 const { createCanvas, loadImage } = require('canvas');
-const chalk = require('chalk');
 
 module.exports = {
         name: "profile",
@@ -23,10 +22,10 @@ module.exports = {
                 let LevelConent = `${client.profile.get(`${message.guild.id}-${user.id}`, "level")}`
         let bal = db.fetch(`money_${user.id}`)
         const { registerFont } = require('canvas');
-        registerFont('Data/CairoBold.ttf', { family: 'cairo-bold' });
+        registerFont('data/CairoBold.ttf', { family: 'cairo-bold' });
         const Canvas = createCanvas(512, 512);
         const ctx = Canvas.getContext('2d');
-        const profile_img = await loadImage('Data/profile.png');
+        const profile_img = await loadImage('data/profile.png');
         ctx.drawImage(profile_img, 0, 0, Canvas.width, Canvas.height);
         ctx.strokeStyle = '#ffffff';
         ctx.strokeRect(0, 0, Canvas.width, Canvas.height);
