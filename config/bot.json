@@ -1,13 +1,13 @@
 {
     "dev": {
-        "owner_id": [""],
-        "support": "",
+        "owner_id": ["786223242191831050"],
+        "support": "https://discord.gg/HbuhvRbPdm",
         "website": ""
     },
     "bot": {
         "connections": {
             "mongoose": "",
-            "yt_api": ""
+            "yt_api": "AIzaSyCfDFrz-cVRs6J6HRt3dDbk4D_IHa8xnB8"
         },
         "setting": {
             "main_prefix": ""
