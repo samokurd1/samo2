@@ -5,7 +5,7 @@ const chalk = require('chalk');
 module.exports = {
     name: "invite",
     cooldown: 5,
-    aliases: [""],
+    aliases: ["https://discord.com/api/oauth2/authorize?client_id=786335333788024852&permissions=8&scope=bot"],
 
     run: async(client, message) => {
         let Blacklist = await db.fetch(`Blacklist_${message.author.id}`);
