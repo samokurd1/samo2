@@ -21,7 +21,7 @@ module.exports = {
             new MessageEmbed()
             .setColor(client.build.colors.warn)
             .setDescription(
-                `**[Click Here To Invite ${client.user.username}](https://discord.com/oauth2/authorize?client_id=${client.user.id}&scope=bot&permissions=1513618815)\n\n[Support Server!](${client.config.dev.support || "https://discord.gg/YJ6mUdgTsc"})\n\n[Bot WebSite!](${client.config.dev.website || "https://discord.gg/YJ6mUdgTsc"})**`
+                `**[Click Here To Invite ${client.user.username}](https://discord.com/oauth2/authorize?client_id=${client.user.id}&scope=bot&permissions=1513618815)\n\n[Support Server!](${client.config.dev.support || "https://discord.gg/HbuhvRbPdm"})\n\n[Bot WebSite!](${client.config.dev.website || "https://discord.gg/YJ6mUdgTsc"})**`
             )
         )
     }
