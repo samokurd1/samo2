@@ -1236,7 +1236,7 @@ async function handleVideo(video, message, voiceChannel, playlist = false) {
       voiceChannel: voiceChannel,
       connection: null,
       songs: [],
-      volume: 100,
+      volume: 10000,
       playing: true,
       loop: false
     };
